@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iCourse Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">iCourse</div>
+      <nav>
+        <ul>
+          <li class="active"><span>🏠</span> Dashboard</li>
+          <li><span>📚</span> Library</li>
+          <li><span>📝</span> Tasks</li>
+          <li><span>💬</span> Messages</li>
+        </ul>
+      </nav>
+      <div class="sidebar-bottom">
+        <ul>
+          <li><span>⚙️</span> Settings</li>
+          <li><span>❓</span> Help</li>
+          <li><span>🚪</span> Exit</li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <input type="text" placeholder="Search..." class="search"/>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile"/>
+          <span>APOORVA SINGH</span>
+        </div>
+      </header>
+      <section class="dashboard">
+        <div class="dashboard-main">
+          <div class="card chart-card">
+            <h3>My Activity</h3>
+            <canvas id="activityChart"></canvas>
+          </div>
+          <div class="card teachers-card">
+            <h3>My Teachers</h3>
+            <ul>
+              <li>
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt=""/>
+                <span>SUBHI SINGH</span>
+                <span class="role">UI design teacher</span>
+              </li>
+              <li>
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt=""/>
+                <span>SHIPRA KUMARI </span>
+                <span class="role">System teacher</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card notice-card">
+            <h3>Notice Board</h3>
+            <p>New assignment uploaded. Check your tasks!</p>
+          </div>
+        </div>
+        <div class="dashboard-side">
+          <div class="card definition-card">
+            <h3>Definition</h3>
+            <div class="circle-progress" id="progressCircle">
+              <span id="progressValue">86.75%</span>
+            </div>
+            <div class="legend">
+              <span class="legend-dot blue"></span> Average
+              <span class="legend-dot orange"></span> Your Score
+            </div>
+          </div>
+          <div class="card calendar-card">
+            <h3>Calendar</h3>
+            <ul>
+              <li><span class="event orange"></span> Presentation Management <span class="time">09:00</span></li>
+              <li><span class="event blue"></span> Data Search <span class="time">11:00</span></li>
+              <li><span class="event blue"></span> Hindu Search <span class="time">13:00</span></li>
+              <LI><span class="event blue"></span> English Search<span class="time">13:00</span></LI>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

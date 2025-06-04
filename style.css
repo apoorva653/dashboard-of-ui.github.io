@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg,  #3beb18, #0bf5d5);
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .sidebar {
+    width: 220px;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 2px 0 20px #0001;
+    padding: 30px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #3a7bd5;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebar nav ul, .sidebar-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar nav ul li, .sidebar-bottom ul li {
+    padding: 12px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: #555;
+    transition: background 0.2s;
+  }
+  .sidebar nav ul li.active, .sidebar nav ul li:hover {
+    background: #e0eafc;
+    color: #3a7bd5;
+    font-weight: bold;
+  }
+  .sidebar nav ul li span, .sidebar-bottom ul li span {
+    margin-right: 10px;
+  }
+  .sidebar-bottom {
+    margin-top: 30px;
+  }
+  main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .search {
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    background: #f7fafd;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .profile img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3a7bd5;
+  }
+  .dashboard {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+  }
+  .dashboard-main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .dashboard-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px #0001;
+    padding: 25px;
+  }
+  .chart-card {
+    height: 250px;
+  }
+  .teachers-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .teachers-card li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .teachers-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3a7bd5;
+  }
+  .teachers-card .role {
+    margin-left: auto;
+    color: #aaa;
+    font-size: 0.95em;
+  }
+  .notice-card p {
+    margin: 0;
+    color: #3a7bd5;
+    font-weight: bold;
+  }
+  .definition-card {
+    text-align: center;
+  }
+  .circle-progress {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle-progress span {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3a7bd5;
+  }
+  .legend {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #888;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px 0 10px;
+  }
+  .legend-dot.blue { background: #3a7bd5; }
+  .legend-dot.orange { background: #ffb347; }
+  .calendar-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .calendar-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1em;
+  }
+  .event {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .event.orange { background: #0bf564; }
+  .event.blue { background: #0b2bf5; }
+  .time {
+    margin-left: auto;
+    color: #aaa;
+    font-size: 0.95em;
+  }
+  @media (max-width: 1100px) {
+    .dashboard { flex-direction: column; }
+    .dashboard-main, .dashboard-side { width: 100%; }
+  }
